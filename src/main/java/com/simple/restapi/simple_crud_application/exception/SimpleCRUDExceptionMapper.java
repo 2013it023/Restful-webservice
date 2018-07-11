@@ -3,6 +3,7 @@ package com.simple.restapi.simple_crud_application.exception;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
+import javax.ws.rs.ext.Provider;
 
 import com.simple.restapi.simple_crud_application.model.ExceptionMessage;
 
@@ -14,6 +15,7 @@ import com.simple.restapi.simple_crud_application.model.ExceptionMessage;
  * @since July, 2018
  *
  */
+@Provider
 public class SimpleCRUDExceptionMapper implements ExceptionMapper<SimpleCRDUDException> {
 
 	@Override
